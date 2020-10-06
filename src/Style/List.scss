@@ -1,0 +1,27 @@
+.breadcrumb {
+    padding: 0;
+    margin: 16px 0 16px 0;
+    background-color: none;
+    font-size: 14;
+}
+
+.breadcrumb {
+	a {
+		color: #999999;
+	}
+}
+.breadcrumb-item {
+	&.active {
+		color: #666666;
+	}
+}
+
+.breadcrumb-item {
+	+ {
+		.breadcrumb-item {
+			&::before {
+				content: ">";
+			}
+		}
+	}
+}

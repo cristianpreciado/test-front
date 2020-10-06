@@ -1,0 +1,17 @@
+$size-space:16px;
+$color-text:#333333;
+.item-product{
+    color: $color-text;
+    background: #FFFFFF;
+    padding: $size-space 0 $size-space 0;
+    img {
+        margin: 0 $size-space 0 $size-space;
+    }
+}
+.price{
+    font-size: 24px;
+    margin: 6px 0 32px 0;
+}
+.title{
+    font-size: 18px;
+}
