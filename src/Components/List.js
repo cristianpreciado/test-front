@@ -8,22 +8,19 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import queryString from 'query-string';
 
 const List = (props) => {
-    const search=props.location.search;
     const [products, setProducts] = useState([]);
-    const [query, setQuery] = useState("");
 
     useEffect(() => {
-        const values = queryString.parse(query);
+        const values = queryString.parse(props.location.search);
         const fetchData = async () => {
             if(values.search){
                 const resultProducts = await getListProducts(values.search);
                 setProducts(resultProducts);
             }
         };
-        setQuery(search);
+        
         fetchData();
-    },[query]);
-
+    },[props.location.search]);
 
     if (products.categories && products.items) {
         return (

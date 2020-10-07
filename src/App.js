@@ -7,12 +7,7 @@ import ItemDetail from './Components/ItemDetail';
 
 const App = () => (
   <Router>
-    <Route path="/" render={() => {
-      return (<div>
-        <SearchBar/>
-      </div>)
-    }}>
-    </Route>
+    <Route path="/" component={SearchBar}></Route>
     <Route exact path="/items" component={List}></Route>
     <Route exact path="/items/:id" component={ItemDetail}></Route>
   </Router>
