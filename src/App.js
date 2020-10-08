@@ -4,7 +4,9 @@ import './Style/App.scss';
 import SearchBar from './Components/SearchBar';
 import List from './Components/List';
 import ItemDetail from './Components/ItemDetail';
-
+/**
+ * punto de entrada a la aplicacion manejador de rutas que pueden consultar.
+ */
 const App = () => (
   <Router>
     <Route path="/" component={SearchBar}></Route>

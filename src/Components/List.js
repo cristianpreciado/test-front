@@ -6,7 +6,9 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup'
 import queryString from 'query-string';
-
+/**
+ * componenete encargado de generar el listado de de los prouductos haciendo uso de los queryparams pasados
+ */
 const List = (props) => {
     const [products, setProducts] = useState([]);
 

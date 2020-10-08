@@ -11,7 +11,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
-
+/**
+ * componente encargado de realizar las busquedas y redirigir al listado de produtos 
+ */
 const SearchBar = (props) => {
     let history = useHistory();
     const [value, setValue] = useState('');

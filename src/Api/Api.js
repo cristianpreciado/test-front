@@ -1,3 +1,7 @@
+/**
+ * api, la cual tiene una ruta base, sus diferentes puntos de entrada y metodos para hacer consulta de para consulta API
+ * implemntacion de retorno en formato solicitado para cada recurso a consumir.
+ */
 const ulr_base="https://api.mercadolibre.com/";
 
 const ENPOINTS={

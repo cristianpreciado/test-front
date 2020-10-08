@@ -8,7 +8,9 @@ import Image from 'react-bootstrap/Image';
 import ic_shipping from '../Assets/ic_shipping.png';
 import Button from 'react-bootstrap/Button';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-
+/**
+ * compoenente en cargado de mostrar el detalle de producto selecionado
+ */
 class ItemDetail extends Component {
     constructor(props) {
         super(props);

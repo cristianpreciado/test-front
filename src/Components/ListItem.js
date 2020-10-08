@@ -6,7 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import ListGroup from 'react-bootstrap/ListGroup';
-
+/**
+ * compoenete encargado de mostrar cada producto y redirecionar al detalle de producto escogido.
+ */
 const ListItem = (props) => {
     let history = useHistory();
     const handleClick = (id) => {
